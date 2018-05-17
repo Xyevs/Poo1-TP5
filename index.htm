@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Bruce Lee gaming cards</title>
+	<link rel="stylesheet" href="css/stylesheet.css" />
+
+	<script src="javascripts/data.js"></script>
+	<script src="javascripts/frame.js"></script>
+	<script src="javascripts/items.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</head>
+
+<body>
+	<div id="main-container">
+		<div id="content-wrapper">
+
+			<!-- CONTENU -->
+			<div id="content">
+				<br class="clear-both" />
+			</div>
+			<!-- FIN CONTENU -->
+
+		</div>
+
+		<!-- COLONNE DROITE -->
+		<div id="column">
+			<div id="column-content">
+				<div class="logo" data-icon="C"></div>
+				Votre panier
+
+                <!-- PANIER D'ACHAT -->
+				<table id="basket">
+					<tbody>
+					</tbody>
+				</table>
+                <!-- FIN PANIER D'ACHAT -->
+
+                <!-- TOTAUX DES ARTICLES -->
+                <table id="total">
+                    <tr>
+                        <td>Sous-Total:</td>
+                        <td>0$</td>
+                    </tr>
+                    <tr>
+                        <td>TPS (5%):</td>
+                        <td>0$</td>
+                    </tr>
+                    <tr>
+                        <td>TVQ (9.975%):</td>
+                        <td>0$</td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td>0$</td>
+                    </tr>
+                </table>
+                <!-- FIN TOTAUX DES ARTICLES -->
+
+				<div class="clear-both">Il vous reste seulement <b id="compteRebour">10:00</b> minutes pour compléter vos achats.</div>
+				<button onclick="btnPay()">Payer</button>
+			</div>
+		</div>
+		<!-- FIN COLONNE DROITE -->
+
+	</div>
+</body>
+</html>

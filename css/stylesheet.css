@@ -1,0 +1,200 @@
+@font-face {
+	font-family: 'TP2';
+	src:url('fonts/TP2.eot');
+	src:url('fonts/TP2.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TP2.woff') format('woff'),
+		url('fonts/TP2.ttf') format('truetype'),
+		url('fonts/TP2.svg#TP2') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	font-family: 'TP2';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* --------------------------------- GENERIC -------------------------------- */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	background: #F9F9F9;
+	color: #808080;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+}
+
+/* -------------------------------- STRUCTURE ------------------------------ */
+#main-container {
+    height: 100%;
+    min-height: 100%;
+}
+
+#content-wrapper {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#content {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 400px;
+	overflow: scroll;
+	height: 100%;
+}
+
+#column {
+    position: fixed;
+	width: 400px;
+    right: 0;
+	background-color: #D3D1D2;
+	height: 100%;
+    overflow-y: auto;
+}
+
+/* -------------------------------- ARTICLE -------------------------------- */
+.item {
+	text-shadow: 0 1px 0 #FFF;
+	padding: 5px;
+	width: 200px;
+	float: left;
+	margin-right: 15px;
+	border: 1px solid #F9F9F9;
+	margin-bottom: 10px;
+}
+
+.item img {
+	display: block;
+	margin-bottom: 4px;
+	-moz-box-shadow:5px 4px 8px 0 rgba(119, 119, 119, 0.3);
+	-webkit-box-shadow:5px 4px 8px 0 rgba(119, 119, 119, 0.3);
+	box-shadow:5px 4px 8px 0 rgba(119, 119, 119, 0.3);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+}
+
+.item:hover img {
+	-moz-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+.item-buy {
+	padding-top: 7px;
+	font-size: 12px;
+}
+
+.item-buy input[type="text"] {
+	width: 40px;
+	height: 18px;
+	font-size: 14px;
+}
+
+.item-buy button {
+	background: #efc654;
+	border: none;
+	color: #FFF;
+	padding: 4px;
+	margin-top: 3px;
+}
+
+.logo {
+	color: #425C81;
+	font-size: 82px;
+	text-align: center;
+}
+
+#column-content {
+	padding: 15px;
+	color: #909090;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+#column-content table {
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+/* ----------------------------- PANIER D'ACHAT ---------------------------- */
+#basket {
+	width: 100%;
+    margin-bottom: 40px;
+}
+
+#basket td {
+	border-bottom: 1px solid #808080;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+
+#basket td:last-of-type{
+    text-align: right;
+}
+
+#basket input[type="text"] {
+	width: 30px;
+    outline: none;
+}
+
+/* --------------------------------- TOTAUX -------------------------------- */
+#total {
+	float: right;
+    margin-bottom: 40px;
+}
+
+#total tr>:first-child {
+	text-align: right;
+}
+
+#total td {
+	padding-bottom: 4px;
+}
+
+#total td:last-of-type {
+	padding-left: 5px;
+	font-weight: bold;
+	color: #425C81;
+	text-align: right;
+}
+
+#column-content button {
+	color: #FFF;
+	width: 150px;
+	height: 50px;
+	display: block;
+	background: #425C81;
+	border: none;
+	font-size: 22px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+}
+
+.delete-btn {
+	cursor: pointer;
+}
+
+.clear-both {
+	clear: both;
+}
